@@ -6,7 +6,7 @@ Code University teaches the main programming languages taught in a universal way
 <details>
 <summary>  Videos </summary>
 
-Happy Scripting :-)
+Video: https://www.youtube.com/watch?v=aR1dGTVyCZY
 
 </details>
 
