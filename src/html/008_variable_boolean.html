@@ -1,0 +1,135 @@
+<!-- Dedicated to God the Father -->
+<!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
+<!-- https://github.com/ChristopherTopalian -->
+<!-- https://github.com/ChristopherAndrewTopalian -->
+<!-- 008_variable_boolean.html -->
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title> Universal Language Repository 008: Memory Storage </title>
+
+<meta charset='UTF-8'>
+
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+<link rel='stylesheet' href='../css/style001.css'>
+
+<script src='../js/colorer/catopalian_javascript_universal_code_colorer.js'></script>
+
+</head>
+
+<body onload='applyCustomHighlighting();'>
+
+<div>
+    <h1> Universal Language Repository 008: Memory Storage (Boolean Variables) </h1>
+
+    <hr class="tech-divider">
+
+    <p> We have stored text, whole numbers, and decimals. To complete our fundamental memory systems, we must store <b>Logic</b>. Let's create a variable to track whether the ship's deflector shields are online (<b>True</b>). </p>
+
+    <p> This is called a <b>Boolean</b> variable. Tracking these true/false states is how we build AI decision trees. Remember that beneath the language syntax, the computer processor stores a True state in memory as the binary number <b>1</b>. </p>
+
+    <hr class="tech-divider">
+
+    <h2> 1. JavaScript (HTML / Browser) </h2>
+    <p> JavaScript uses the <code>let</code> keyword and automatically recognizes <code>true</code> as a logical state, storing it appropriately. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;script&gt;
+        let shieldsUp = true;
+        console.log(shieldsUp);
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 2. JavaScript (Node.js) </h2>
+    <p> The desktop engine uses the exact same dynamic logic assignment. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="js">let shieldsUp = true;
+console.log(shieldsUp);
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 3. Python </h2>
+    <p> Python manages the memory automatically, but requires you to strictly capitalize the word <code>True</code> when assigning it to the variable. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="python">shieldsUp = True
+print(shieldsUp)
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 4. C </h2>
+    <p> Legacy C requires the inclusion of the <code>stdbool.h</code> library just to use the word true. We must explicitly declare the variable using the <code>bool</code> keyword, and we retrieve it using the integer placeholder <code>%d</code>, which will print <b>1</b>. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
+#include &lt;stdbool.h&gt;
+
+int main() 
+{
+    // Explicitly declare the memory as a Boolean
+    bool shieldsUp = true;
+    
+    // Prints the raw binary value (1)
+    printf("%d\n", shieldsUp);
+    return 0;
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 5. C++ </h2>
+    <p> Modern C++ has the <code>bool</code> keyword built directly into the language. We declare the memory type, and <code>std::cout</code> handles the output stream (though it will still print the raw <b>1</b> by default). </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
+
+int main() 
+{
+    // Explicitly declare the memory as a Boolean
+    bool shieldsUp = true;
+    
+    std::cout &lt;&lt; shieldsUp &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 6. Rust </h2>
+    <p> Rust infers the logic state automatically using <code>let</code>, locking the variable into safe boolean memory and automatically translating the binary back to the English word "true" upon output. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="rust">fn main() 
+{
+    let shieldsUp = true;
+    
+    println!("{}", shieldsUp);
+}
+</code></pre>
+    </div>
+
+    <div class="technical-specs">
+        <hr class="tech-divider">
+        <h2> Engineering Summary </h2>
+        <p> You now possess the complete foundation of computer memory allocation. Every piece of software in the galaxy, from the simplest UI button to the most complex neural network, is ultimately constructed by combining Strings, Integers, Decimals, and Booleans. </p>
+        <hr class="tech-divider">
+    </div>
+
+</div>
+
+</body>
+
+</html>

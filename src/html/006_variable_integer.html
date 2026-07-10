@@ -1,0 +1,134 @@
+<!-- Dedicated to God the Father -->
+<!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
+<!-- https://github.com/ChristopherTopalian -->
+<!-- https://github.com/ChristopherAndrewTopalian -->
+<!-- 006_variable_integer.html -->
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title> Universal Language Repository 006: Memory Storage </title>
+
+<meta charset='UTF-8'>
+
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+<link rel='stylesheet' href='../css/style001.css'>
+
+<script src='../js/colorer/catopalian_javascript_universal_code_colorer.js'></script>
+
+</head>
+
+<body onload='applyCustomHighlighting();'>
+
+<div>
+    <h1> Universal Language Repository 006: Memory Storage (Integer Variables) </h1>
+
+    <hr class="tech-divider">
+
+    <p> We have successfully stored text. Now, we must store a mathematical value. Let's create a variable to store the number of <b>Photon Torpedoes</b> our ship has in its armory, and then command the engine to print that number. </p>
+
+    <p> This reveals a major difference in how system languages handle memory. Because numbers are processed differently than words, low-level languages require us to explicitly declare the variable as an <code>int</code> (Integer) so the CPU knows exactly how to allocate the RAM. </p>
+
+    <hr class="tech-divider">
+
+    <h2> 1. JavaScript (HTML / Browser) </h2>
+    <p> JavaScript remains flexible. We use the same <code>let</code> keyword we used for Strings. Because we typed a raw number without quotes, the engine automatically stores it as a mathematical value. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;script&gt;
+        let photonTorpedoes = 50;
+        console.log(photonTorpedoes);
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 2. JavaScript (Node.js) </h2>
+    <p> The Node.js environment uses the exact same dynamic type inference. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="js">let photonTorpedoes = 50;
+console.log(photonTorpedoes);
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 3. Python </h2>
+    <p> Python requires no keywords. You assign the number directly to the variable name, and the engine handles the memory allocation under the hood. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="python">photonTorpedoes = 50
+print(photonTorpedoes)
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 4. C </h2>
+    <p> Here we see the strict hardware rules. We cannot just invent a variable name. We must explicitly write <code>int</code> before the variable to tell the C compiler to lock in a specific chunk of numerical memory. We then use our <code>%d</code> placeholder to retrieve it. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
+
+int main() 
+{
+    // Explicitly declare the variable as an Integer
+    int photonTorpedoes = 50;
+    
+    // Retrieve the variable using the decimal integer placeholder
+    printf("%d\n", photonTorpedoes);
+    return 0;
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 5. C++ </h2>
+    <p> C++ requires the exact same explicit memory declaration as C. We use the <code>int</code> keyword, but the <code>std::cout</code> stream makes retrieving and printing the variable much safer and easier than legacy C. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
+
+int main() 
+{
+    // Explicitly declare the variable as an Integer
+    int photonTorpedoes = 50;
+    
+    std::cout &lt;&lt; photonTorpedoes &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 6. Rust </h2>
+    <p> Rust shows off its modern design. It uses the <code>let</code> keyword and infers that 50 is an integer. Behind the scenes, the Rust compiler locks it into strict numerical memory for maximum safety, giving you the speed of C++ with the ease of JavaScript. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="rust">fn main() 
+{
+    let photonTorpedoes = 50;
+    
+    println!("{}", photonTorpedoes);
+}
+</code></pre>
+    </div>
+
+    <div class="technical-specs">
+        <hr class="tech-divider">
+        <h2> Engineering Summary </h2>
+        <p> Statically typed languages (C, C++) require you to use the <code>int</code> keyword to declare an integer variable. If you tried to put a word into an <code>int</code> variable, the C++ engine would refuse to compile and throw an error, preventing you from crashing the ship's systems in deep space! </p>
+        <hr class="tech-divider">
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!-- Dedicated to God the Father -->
+<!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
+<!-- https://github.com/ChristopherTopalian -->
+<!-- https://github.com/ChristopherAndrewTopalian -->
+<!-- 004_data_types_boolean.html -->
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title> Universal Language Repository 004: Transmitting Logic </title>
+
+<meta charset='UTF-8'>
+
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+<link rel='stylesheet' href='../css/style001.css'>
+
+<script src='../js/colorer/catopalian_javascript_universal_code_colorer.js'></script>
+
+</head>
+
+<body onload='applyCustomHighlighting();'>
+
+<div>
+    <h1> Universal Language Repository 004: Transmitting Logic (Booleans) </h1>
+
+    <hr class="tech-divider">
+
+    <p> We have transmitted text (Strings) and math (Integers and Decimals). Now, we must transmit <b>Logic</b>. </p>
+
+    <p> To run a ship's diagnostic routine or build an AI, the engine must evaluate whether a statement is <b>True</b> or <b>False</b>. In computer science, this is called a <b>Boolean</b> data type (named after mathematician George Boole). </p>
+
+    <p> Underneath the hood, computer processors do not understand the words "true" or "false". They only understand binary: <b>1 (On)</b> and <b>0 (Off)</b>. Watch closely how these different languages format a Boolean transmission. </p>
+
+    <hr class="tech-divider">
+
+    <h2> 1. JavaScript (HTML / Browser) </h2>
+    <p> JavaScript prints the word exactly as it is typed, in all lowercase letters. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;script&gt;
+        console.log(true);
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 2. JavaScript (Node.js) </h2>
+    <p> The Node.js desktop engine behaves identically, printing the lowercase word. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="js">console.log(true);
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 3. Python </h2>
+    <p> <b>Warning:</b> Python is unique. It requires Booleans to be capitalized. If you type <code>true</code> with a lowercase 't', the Python engine will crash. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="python">print(True)
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 4. C </h2>
+    <p> The legacy C language reveals the hardware's truth. C does not have a built-in "boolean" word by default. We must import a special library (<code>stdbool.h</code>) just to use the word <code>true</code>. Even then, when we print it, we must use the integer placeholder <code>%d</code>, and the screen will output the number <b>1</b>. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
+#include &lt;stdbool.h&gt; // Required to use the word 'true'
+
+int main() 
+{
+    // Prints the number 1 (Binary for True)
+    printf("%d\n", true);
+    return 0;
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 5. C++ </h2>
+    <p> Modern C++ has the word <code>true</code> built-in, but the <code>cout</code> stream still respects the raw hardware. By default, transmitting <code>true</code> will print the number <b>1</b> to the console. (You can force it to print the English word, but it requires advanced formatting). </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
+
+int main() 
+{
+    // Prints the number 1
+    std::cout &lt;&lt; true &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> 6. Rust </h2>
+    <p> Rust acts as a modern bridge. It understands the lowercase word like JavaScript, automatically translating the binary back into human-readable text on the console. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="rust">fn main() 
+{
+    println!("{}", true);
+}
+</code></pre>
+    </div>
+
+    <div class="technical-specs">
+        <hr class="tech-divider">
+        <h2> Engineering Summary </h2>
+        <p> This lesson exposes the "Metal" of the computer. High-level languages (JS, Python, Rust) hide the binary from you, showing you the English words "true" or "True". Low-level systems languages (C, C++) strip away the English and show you the raw electrical state of the memory: <b>1</b>. </p>
+        <hr class="tech-divider">
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
