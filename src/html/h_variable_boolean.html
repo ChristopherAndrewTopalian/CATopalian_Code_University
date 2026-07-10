@@ -2,12 +2,12 @@
 <!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
 <!-- https://github.com/ChristopherTopalian -->
 <!-- https://github.com/ChristopherAndrewTopalian -->
-<!-- 008_variable_boolean.html -->
+<!-- 00080_variable_boolean.html -->
 
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<title> Universal Language Repository 008: Memory Storage </title>
+<title> Boolean Variable </title>
 
 <meta charset='UTF-8'>
 
@@ -22,7 +22,7 @@
 <body onload='applyCustomHighlighting();'>
 
 <div>
-    <h1> Universal Language Repository 008: Memory Storage (Boolean Variables) </h1>
+    <h1> Boolean Variables </h1>
 
     <hr class="tech-divider">
 
@@ -32,7 +32,7 @@
 
     <hr class="tech-divider">
 
-    <h2> 1. JavaScript (HTML / Browser) </h2>
+    <h2> JavaScript (HTML / Browser) </h2>
     <p> JavaScript uses the <code>let</code> keyword and automatically recognizes <code>true</code> as a logical state, storing it appropriately. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
@@ -51,7 +51,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 2. JavaScript (Node.js) </h2>
+    <h2> JavaScript (Node.js) </h2>
     <p> The desktop engine uses the exact same dynamic logic assignment. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="js">let shieldsUp = true;
@@ -61,7 +61,7 @@ console.log(shieldsUp);
 
     <hr class="largeDivider">
 
-    <h2> 3. Python </h2>
+    <h2> Python </h2>
     <p> Python manages the memory automatically, but requires you to strictly capitalize the word <code>True</code> when assigning it to the variable. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="python">shieldsUp = True
@@ -71,7 +71,7 @@ print(shieldsUp)
 
     <hr class="largeDivider">
 
-    <h2> 4. C </h2>
+    <h2> C </h2>
     <p> Legacy C requires the inclusion of the <code>stdbool.h</code> library just to use the word true. We must explicitly declare the variable using the <code>bool</code> keyword, and we retrieve it using the integer placeholder <code>%d</code>, which will print <b>1</b>. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
@@ -91,7 +91,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 5. C++ </h2>
+    <h2> C++ </h2>
     <p> Modern C++ has the <code>bool</code> keyword built directly into the language. We declare the memory type, and <code>std::cout</code> handles the output stream (though it will still print the raw <b>1</b> by default). </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
@@ -109,7 +109,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 6. Rust </h2>
+    <h2> Rust </h2>
     <p> Rust infers the logic state automatically using <code>let</code>, locking the variable into safe boolean memory and automatically translating the binary back to the English word "true" upon output. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="rust">fn main() 

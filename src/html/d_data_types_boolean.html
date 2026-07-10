@@ -2,12 +2,12 @@
 <!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
 <!-- https://github.com/ChristopherTopalian -->
 <!-- https://github.com/ChristopherAndrewTopalian -->
-<!-- 004_data_types_boolean.html -->
+<!-- 00040_data_types_boolean.html -->
 
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<title> Universal Language Repository 004: Transmitting Logic </title>
+<title> Universal Language Repository: Transmitting Logic </title>
 
 <meta charset='UTF-8'>
 
@@ -22,7 +22,7 @@
 <body onload='applyCustomHighlighting();'>
 
 <div>
-    <h1> Universal Language Repository 004: Transmitting Logic (Booleans) </h1>
+    <h1> Booleans </h1>
 
     <hr class="tech-divider">
 
@@ -34,7 +34,7 @@
 
     <hr class="tech-divider">
 
-    <h2> 1. JavaScript (HTML / Browser) </h2>
+    <h2> JavaScript (HTML / Browser) </h2>
     <p> JavaScript prints the word exactly as it is typed, in all lowercase letters. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
@@ -52,7 +52,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 2. JavaScript (Node.js) </h2>
+    <h2> JavaScript (Node.js) </h2>
     <p> The Node.js desktop engine behaves identically, printing the lowercase word. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="js">console.log(true);
@@ -61,7 +61,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 3. Python </h2>
+    <h2> Python </h2>
     <p> <b>Warning:</b> Python is unique. It requires Booleans to be capitalized. If you type <code>true</code> with a lowercase 't', the Python engine will crash. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="python">print(True)
@@ -70,7 +70,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 4. C </h2>
+    <h2> C </h2>
     <p> The legacy C language reveals the hardware's truth. C does not have a built-in "boolean" word by default. We must import a special library (<code>stdbool.h</code>) just to use the word <code>true</code>. Even then, when we print it, we must use the integer placeholder <code>%d</code>, and the screen will output the number <b>1</b>. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
@@ -87,7 +87,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 5. C++ </h2>
+    <h2> C++ </h2>
     <p> Modern C++ has the word <code>true</code> built-in, but the <code>cout</code> stream still respects the raw hardware. By default, transmitting <code>true</code> will print the number <b>1</b> to the console. (You can force it to print the English word, but it requires advanced formatting). </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
@@ -103,7 +103,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 6. Rust </h2>
+    <h2> Rust </h2>
     <p> Rust acts as a modern bridge. It understands the lowercase word like JavaScript, automatically translating the binary back into human-readable text on the console. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="rust">fn main() 

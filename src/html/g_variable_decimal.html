@@ -2,12 +2,12 @@
 <!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
 <!-- https://github.com/ChristopherTopalian -->
 <!-- https://github.com/ChristopherAndrewTopalian -->
-<!-- 007_variable_decimal.html -->
+<!-- 00070_variable_decimal.html -->
 
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<title> Universal Language Repository 007: Memory Storage </title>
+<title> Universal Language Repository: Memory Storage Decimals </title>
 
 <meta charset='UTF-8'>
 
@@ -22,7 +22,7 @@
 <body onload='applyCustomHighlighting();'>
 
 <div>
-    <h1> Universal Language Repository 007: Memory Storage (Decimal Variables) </h1>
+    <h1> Decimal Variables </h1>
 
     <hr class="tech-divider">
 
@@ -32,7 +32,7 @@
 
     <hr class="tech-divider">
 
-    <h2> 1. JavaScript (HTML / Browser) </h2>
+    <h2> JavaScript (HTML / Browser) </h2>
     <p> JavaScript makes math incredibly simple. Under the hood, JavaScript treats <i>all</i> numbers as high-precision doubles automatically. We just use our standard <code>let</code> keyword. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
@@ -51,7 +51,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 2. JavaScript (Node.js) </h2>
+    <h2> JavaScript (Node.js) </h2>
     <p> The Node.js environment acts identically. Assign the decimal to a variable, and the engine allocates the high-precision memory automatically. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="js">let warpFactor = 9.97;
@@ -61,7 +61,7 @@ console.log(warpFactor);
 
     <hr class="largeDivider">
 
-    <h2> 3. Python </h2>
+    <h2> Python </h2>
     <p> Python detects the decimal point during the assignment and automatically classifies the variable as a floating-point number in its memory banks. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="python">warpFactor = 9.97
@@ -71,7 +71,7 @@ print(warpFactor)
 
     <hr class="largeDivider">
 
-    <h2> 4. C </h2>
+    <h2> C </h2>
     <p> C requires absolute precision. We cannot use <code>int</code> because 9.97 is not a whole number. We must explicitly use the <code>float</code> or <code>double</code> keyword to reserve decimal memory, and we must retrieve it using the <code>%f</code> placeholder. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
@@ -90,7 +90,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 5. C++ </h2>
+    <h2> C++ </h2>
     <p> C++ utilizes the exact same <code>double</code> keyword to reserve the memory block. However, the modern <code>std::cout</code> stream automatically handles the output formatting, saving you from having to type <code>%f</code>. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
@@ -108,7 +108,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 6. Rust </h2>
+    <h2> Rust </h2>
     <p> Rust gives you the best of both worlds. You use the simple <code>let</code> keyword, but the Rust compiler strictly enforces it as an <code>f64</code> (64-bit float) in memory to ensure maximum engine stability. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="rust">fn main() 

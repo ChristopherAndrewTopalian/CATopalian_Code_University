@@ -2,12 +2,12 @@
 <!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
 <!-- https://github.com/ChristopherTopalian -->
 <!-- https://github.com/ChristopherAndrewTopalian -->
-<!-- 003_data_types_decimal.html -->
+<!-- 00030_data_types_decimal.html -->
 
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<title> Universal Language Repository 003: Transmitting Decimals </title>
+<title> Universal Language Repository: Transmitting Decimals </title>
 
 <meta charset='UTF-8'>
 
@@ -22,7 +22,7 @@
 <body onload='applyCustomHighlighting();'>
 
 <div>
-    <h1> Universal Language Repository 003: Transmitting Decimals </h1>
+    <h1> Decimals </h1>
 
     <hr class="tech-divider">
 
@@ -32,7 +32,7 @@
 
     <hr class="tech-divider">
 
-    <h2> 1. JavaScript (HTML / Browser) </h2>
+    <h2> JavaScript (HTML / Browser) </h2>
     <p> JavaScript makes this incredibly easy. Under the hood, JavaScript treats <i>all</i> numbers as high-precision decimals automatically. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
@@ -50,7 +50,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 2. JavaScript (Node.js) </h2>
+    <h2> JavaScript (Node.js) </h2>
     <p> The Node.js desktop engine treats the decimal the exact same way. No special formatting is required. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="js">console.log(9.97);
@@ -59,7 +59,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 3. Python </h2>
+    <h2> Python </h2>
     <p> Python also handles floating-point numbers seamlessly without requiring any additional syntax. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="python">print(9.97)
@@ -68,7 +68,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 4. C </h2>
+    <h2> C </h2>
     <p> In the legacy C language, we must use a brand new placeholder. If we try to use <code>%d</code> (for integer), the engine will crash or print garbage data. We must explicitly use <code>%f</code> to tell the compiler: <i>"Expect a floating-point decimal here."</i> </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
@@ -84,7 +84,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 5. C++ </h2>
+    <h2> C++ </h2>
     <p> Here we see the safety and ease of modern C++. Instead of forcing you to memorize the <code>%f</code> placeholder, the <code>cout</code> stream automatically detects that 9.97 is a decimal and handles the memory formatting for you safely. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
@@ -99,7 +99,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 6. Rust </h2>
+    <h2> Rust </h2>
     <p> Rust maintains its modern, safe architecture. You can use the exact same empty brackets <code>{}</code> that you used for integers. The Rust compiler analyzes the number and automatically formats the decimal for transmission. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="rust">fn main() 

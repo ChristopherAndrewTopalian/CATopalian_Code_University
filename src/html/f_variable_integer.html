@@ -2,12 +2,12 @@
 <!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
 <!-- https://github.com/ChristopherTopalian -->
 <!-- https://github.com/ChristopherAndrewTopalian -->
-<!-- 006_variable_integer.html -->
+<!-- 00060_variable_integer.html -->
 
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<title> Universal Language Repository 006: Memory Storage </title>
+<title> Universal Language Repository: Memory Storage </title>
 
 <meta charset='UTF-8'>
 
@@ -22,7 +22,7 @@
 <body onload='applyCustomHighlighting();'>
 
 <div>
-    <h1> Universal Language Repository 006: Memory Storage (Integer Variables) </h1>
+    <h1> Integer Variables </h1>
 
     <hr class="tech-divider">
 
@@ -32,7 +32,7 @@
 
     <hr class="tech-divider">
 
-    <h2> 1. JavaScript (HTML / Browser) </h2>
+    <h2> JavaScript (HTML / Browser) </h2>
     <p> JavaScript remains flexible. We use the same <code>let</code> keyword we used for Strings. Because we typed a raw number without quotes, the engine automatically stores it as a mathematical value. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
@@ -51,7 +51,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 2. JavaScript (Node.js) </h2>
+    <h2> JavaScript (Node.js) </h2>
     <p> The Node.js environment uses the exact same dynamic type inference. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="js">let photonTorpedoes = 50;
@@ -61,7 +61,7 @@ console.log(photonTorpedoes);
 
     <hr class="largeDivider">
 
-    <h2> 3. Python </h2>
+    <h2> Python </h2>
     <p> Python requires no keywords. You assign the number directly to the variable name, and the engine handles the memory allocation under the hood. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="python">photonTorpedoes = 50
@@ -71,7 +71,7 @@ print(photonTorpedoes)
 
     <hr class="largeDivider">
 
-    <h2> 4. C </h2>
+    <h2> C </h2>
     <p> Here we see the strict hardware rules. We cannot just invent a variable name. We must explicitly write <code>int</code> before the variable to tell the C compiler to lock in a specific chunk of numerical memory. We then use our <code>%d</code> placeholder to retrieve it. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
@@ -90,7 +90,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 5. C++ </h2>
+    <h2> C++ </h2>
     <p> C++ requires the exact same explicit memory declaration as C. We use the <code>int</code> keyword, but the <code>std::cout</code> stream makes retrieving and printing the variable much safer and easier than legacy C. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
@@ -108,7 +108,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 6. Rust </h2>
+    <h2> Rust </h2>
     <p> Rust shows off its modern design. It uses the <code>let</code> keyword and infers that 50 is an integer. Behind the scenes, the Rust compiler locks it into strict numerical memory for maximum safety, giving you the speed of C++ with the ease of JavaScript. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="rust">fn main() 
@@ -132,3 +132,4 @@ int main()
 </body>
 
 </html>
+

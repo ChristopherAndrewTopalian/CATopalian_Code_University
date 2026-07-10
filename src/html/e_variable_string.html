@@ -2,12 +2,12 @@
 <!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
 <!-- https://github.com/ChristopherTopalian -->
 <!-- https://github.com/ChristopherAndrewTopalian -->
-<!-- 005_variable_string.html -->
+<!-- 00050_variable_string.html -->
 
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<title> Universal Language Repository 005: Memory Storage </title>
+<title> Universal Language Repository: Memory Storage </title>
 
 <meta charset='UTF-8'>
 
@@ -22,7 +22,7 @@
 <body onload='applyCustomHighlighting();'>
 
 <div>
-    <h1> Universal Language Repository 005: Memory Storage (String Variables) </h1>
+    <h1> String Variables </h1>
 
     <hr class="tech-divider">
 
@@ -32,7 +32,7 @@
 
     <hr class="tech-divider">
 
-    <h2> 1. JavaScript (HTML / Browser) </h2>
+    <h2> JavaScript (HTML / Browser) </h2>
     <p> JavaScript uses the <code>let</code> keyword to create a variable. It automatically detects that the data inside the quotes is a String. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
@@ -51,7 +51,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 2. JavaScript (Node.js) </h2>
+    <h2> JavaScript (Node.js) </h2>
     <p> The desktop environment uses the exact same <code>let</code> syntax for flexible memory storage. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="js">let shipName = "Enterprise";
@@ -61,7 +61,7 @@ console.log(shipName);
 
     <hr class="largeDivider">
 
-    <h2> 3. Python </h2>
+    <h2> Python </h2>
     <p> Python is the most minimalist. It doesn't even require a keyword like <code>let</code>. You simply write the name of the variable, use the equals sign, and assign the data. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="python">shipName = "Enterprise"
@@ -71,7 +71,7 @@ print(shipName)
 
     <hr class="largeDivider">
 
-    <h2> 4. C </h2>
+    <h2> C </h2>
     <p> Because C is so old, it does not actually have a "String" variable type! To store text, we must explicitly tell the computer to build an Array of Characters using <code>char[]</code>. We then retrieve it using the <code>%s</code> (String) placeholder. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
@@ -90,7 +90,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 5. C++ </h2>
+    <h2> C++ </h2>
     <p> C++ fixes the legacy issues of C. By including the <code>&lt;string&gt;</code> library, we get access to the powerful and safe <code>std::string</code> object type. We must explicitly declare the data type before the variable name. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
@@ -109,7 +109,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 6. Rust </h2>
+    <h2> Rust </h2>
     <p> Rust combines modern flexibility with system-level power. Like JavaScript, it uses the <code>let</code> keyword, allowing the engine to automatically infer that the text is a String without requiring you to explicitly declare the type. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="rust">fn main() 

@@ -4,25 +4,25 @@ let tutorials = [
     {
         name: 'Output Strings',
         category: 'beginner',
-        urlOffline: 'src/html/001_data_types_string.html'
+        urlOffline: 'src/html/a_data_types_string.html'
     }, 
 
     {
         name: 'Output Integers',
         category: 'beginner',
-        urlOffline: 'src/html/002_data_types_integer.html'
+        urlOffline: 'src/html/b_data_types_integer.html'
     }, 
 
     {
         name: 'Output Decimals',
         category: 'beginner',
-        urlOffline: 'src/html/003_data_types_decimal.html'
+        urlOffline: 'src/html/c_data_types_decimal.html'
     }, 
 
     {
         name: 'Output Boolean',
         category: 'beginner',
-        urlOffline: 'src/html/004_data_types_boolean.html'
+        urlOffline: 'src/html/d_data_types_boolean.html'
     }, 
 
     //----//
@@ -30,7 +30,7 @@ let tutorials = [
     {
         name: '----',
         category: 'spacer',
-        urlOffline: 'src/html/001_data_types_string.html'
+        urlOffline: 'src/html/a_data_types_string.html'
     }, 
 
     //----//
@@ -39,25 +39,31 @@ let tutorials = [
     {
         name: 'Output String Variable',
         category: 'beginner',
-        urlOffline: 'src/html/005_variable_string.html'
+        urlOffline: 'src/html/e_variable_string.html'
     }, 
 
     {
         name: 'Output Integer Variable',
         category: 'beginner',
-        urlOffline: 'src/html/006_variable_integer.html'
+        urlOffline: 'src/html/f_variable_integer.html'
     }, 
 
     {
         name: 'Output Decimal Variable',
         category: 'beginner',
-        urlOffline: 'src/html/007_variable_decimal.html'
+        urlOffline: 'src/html/g_variable_decimal.html'
     },
 
     {
         name: 'Output Boolean Variable',
         category: 'beginner',
-        urlOffline: 'src/html/008_variable_boolean.html'
+        urlOffline: 'src/html/h_variable_boolean.html'
+    },
+
+    {
+        name: 'Output Array and List Variable',
+        category: 'beginner',
+        urlOffline: 'src/html/i_variable_array_and_list.html'
     },
 
 ];

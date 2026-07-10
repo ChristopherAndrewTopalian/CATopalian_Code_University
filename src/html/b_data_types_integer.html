@@ -2,12 +2,12 @@
 <!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
 <!-- https://github.com/ChristopherTopalian -->
 <!-- https://github.com/ChristopherAndrewTopalian -->
-<!-- 002_data_types_integer.html -->
+<!-- 00020_data_types_integer.html -->
 
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<title> Universal Language Repository 002: Transmitting Integers </title>
+<title> Universal Language Repository: Transmitting Integers </title>
 
 <meta charset='UTF-8'>
 
@@ -22,7 +22,7 @@
 <body onload='applyCustomHighlighting();'>
 
 <div>
-    <h1> Universal Language Repository 002: Transmitting Integers </h1>
+    <h1> Integers </h1>
 
     <hr class="tech-divider">
 
@@ -32,7 +32,7 @@
 
     <hr class="tech-divider">
 
-    <h2> 1. JavaScript (HTML / Browser) </h2>
+    <h2> JavaScript (HTML / Browser) </h2>
     <p> JavaScript is dynamically typed. It recognizes that 42 is a number automatically, without quotes. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
@@ -50,7 +50,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 2. JavaScript (Node.js) </h2>
+    <h2> JavaScript (Node.js) </h2>
     <p> The exact same automatic numeric recognition applies to the desktop engine. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="js">console.log(42);
@@ -59,7 +59,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 3. Python </h2>
+    <h2> Python </h2>
     <p> Python also handles raw numbers seamlessly. Just drop the integer right into the print function. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="python">print(42)
@@ -68,7 +68,7 @@
 
     <hr class="largeDivider">
 
-    <h2> 4. C </h2>
+    <h2> C </h2>
     <p> Here is where true systems engineering begins. In C, <code>printf</code> cannot just print a number directly. You must give it a String containing a placeholder, and then pass the number afterward. We use <code>%d</code> to tell the C compiler: <i>"Expect a decimal integer here."</i> </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
@@ -84,7 +84,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 5. C++ </h2>
+    <h2> C++ </h2>
     <p> C++ makes printing numbers much easier than C. The <code>cout</code> stream automatically detects that 42 is an integer and formats it for you. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
@@ -99,7 +99,7 @@ int main()
 
     <hr class="largeDivider">
 
-    <h2> 6. Rust </h2>
+    <h2> Rust </h2>
     <p> Rust requires strict formatting similar to C, but uses a more modern placeholder. We use empty curly brackets <code>{}</code> to tell the Rust macro where to inject the number. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="rust">fn main() 
@@ -122,3 +122,4 @@ int main()
 </body>
 
 </html>
+
