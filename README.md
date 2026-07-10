@@ -36,6 +36,5 @@ Happy Scripting :-)
 // https://github.com/ChristopherTopalian  
 // https://github.com/ChristopherAndrewTopalian  
 // https://sites.google.com/view/CollegeOfScripting  
-College of Scripting Music & Science
-CATopalian  
-Code University
+College of Scripting Music & Science  
+CATopalian Code University
