@@ -3,6 +3,10 @@ Code University teaches the main programming languages taught in a universal way
 
 ---
 
+![001](src/media/textures/screenshots/001.png)
+
+---
+
 <details>
 <summary>  Videos </summary>
 
