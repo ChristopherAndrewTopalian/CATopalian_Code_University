@@ -3,6 +3,8 @@
 function whenLoaded()
 {
     makeInterface(tutorials, 0);
+
+    expandAllDetails();
 }
 
 //----//
