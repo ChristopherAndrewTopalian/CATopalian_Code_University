@@ -105,7 +105,15 @@ input("Press Enter to exit...")
     <h2> Second Life Lua (SLua) </h2>
     <p> The modern evolution of virtual world scripting in Second Life. SLua takes the speed of Lua and wraps the Linden library inside an <code>ll</code> object table, allowing clean dot-notation! </p>
     <div class="example-module">
-<pre><code class="custom-code" data-language="slua">ll.OwnerSay("Hi everyone")
+<pre><code class="custom-code" data-language="slua">local function main()
+    print("Hi")
+    -- ll.OwnerSay("Hi")
+end
+
+main()
+
+-- either way is fine.
+-- we can use print or ll.OwnerSay
 </code></pre>
     </div>
 
