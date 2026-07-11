@@ -2,7 +2,7 @@
 <!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
 <!-- https://github.com/ChristopherTopalian -->
 <!-- https://github.com/ChristopherAndrewTopalian -->
-<!-- 00010_data_types_string.html -->
+<!-- a_data_types_string.html -->
 
 <!DOCTYPE html>
 <html lang='en'>
@@ -26,14 +26,19 @@
 
     <hr class="tech-divider">
 
-    <p> Welcome to the Universal Translator. A senior Starfleet engineer does not just know one language; they understand the underlying logic of all systems. Whether you are scripting a quick UI in the browser, writing server logic, or programming a low-level robotics interface, the logic remains the same, only the syntax changes. </p>
+    <p> Welcome to the Universal Translator. A senior Starfleet engineer does not just know one language; they understand the underlying logic of all systems. Whether you are scripting a quick UI in the browser, writing server logic, programming a virtual world simulation, or commanding low-level robotics, the logic remains the same—only the syntax changes. </p>
 
-    <p> In our first module, we will establish a basic Comm-Link. We are going to instruct six different system environments to print the exact same message: <b>"Hi everyone"</b>. </p>
+    <p> In our foundational module, we will establish a basic Comm-Link. We are going to instruct our system environments to print the exact same message: <b>"Hi everyone"</b>. Notice how we divide them into dynamic scripting engines and high-performance compiled systems! </p>
+
+    <hr class="tech-divider">
+
+    <h2> --- PART 1: DYNAMIC SCRIPTING ENGINES --- </h2>
+    <p> These languages execute commands immediately from top to bottom. They are highly flexible and handle memory management for you behind the scenes. </p>
 
     <hr class="tech-divider">
 
     <h2> JavaScript (HTML / Browser) </h2>
-    <p> The standard for visual interfaces. We place our logic directly inside the <code>&lt;head&gt;</code> of the document using a script tag. To see this message, you open the HTML file in a browser and press F12 to view the console. </p>
+    <p> The universal standard for visual user interfaces and LCARS displays. Logic is placed inside a script tag. View the readout by pressing F12 to open the browser console. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -51,7 +56,7 @@
     <hr class="largeDivider">
 
     <h2> JavaScript (Node.js) </h2>
-    <p> The exact same V8 engine as the browser, but stripped of the visual HTML wrapper. This is used for pure desktop data processing and massive server operations. Run via the system terminal. </p>
+    <p> The exact same V8 engine as the browser, but stripped of the visual HTML wrapper. Utilized for pure desktop data processing, automation, and server architecture. </p>
     <div class="example-module">
 <pre><code class="custom-code" data-language="js">// Run in terminal with: node mission.js
 console.log("Hi everyone");
@@ -61,24 +66,78 @@ console.log("Hi everyone");
     <hr class="largeDivider">
 
     <h2> Python </h2>
-    <p> Known for its highly readable, minimalist syntax. Python is heavily utilized in deep space data science, mathematics, and machine learning models. </p>
+    <p> Renowned for its minimalist, readable syntax. Python is the dominant force in deep space data science, mathematics, and artificial intelligence models. </p>
     <div class="example-module">
-<pre><code class="custom-code" data-language="py"># Run in terminal with: python mission.py
+<pre><code class="custom-code" data-language="python"># Run in terminal with: python mission.py
 print("Hi everyone")
+
+# Hold window open if launched via right-click GUI
+input("Press Enter to exit...")
 </code></pre>
     </div>
 
     <hr class="largeDivider">
 
-    <h2> C </h2>
-    <p> The grandfather of modern computing. C is a low-level systems language used to write operating system kernels and hardware drivers. It requires the Standard Input/Output library (<code>stdio.h</code>) to use the <code>printf</code> (print formatted) command. </p>
+    <h2> Lua (Standard Engine) </h2>
+    <p> Lightweight and highly optimized for embedded game engines and automation scripts. It uses a clean, native print command. </p>
     <div class="example-module">
-<pre><code class="custom-code" data-language="c">// Compile and run via terminal
-#include &lt;stdio.h&gt;
+<pre><code class="custom-code" data-language="lua">print("Hi everyone")
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> Linden Scripting Language (Second Life LSL) </h2>
+    <p> The classic event-driven language of the Second Life virtual world. We use <code>llOwnerSay</code> so the transmission is sent securely to the owner's chat window without spamming the public region. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="lsl">default 
+{
+    state_entry() 
+    {
+        llOwnerSay("Hi everyone");
+    }
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> Second Life Lua (SLua) </h2>
+    <p> The modern evolution of virtual world scripting in Second Life. SLua takes the speed of Lua and wraps the Linden library inside an <code>ll</code> object table, allowing clean dot-notation! </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="slua">ll.OwnerSay("Hi everyone")
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> Ruby </h2>
+    <p> A dynamic, open-source programming language with a focus on simplicity and productivity. It uses the <code>puts</code> (put string) command to output text with an automatic line break. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="ruby"># Run in terminal with: ruby mission.rb
+puts "Hi everyone"
+</code></pre>
+    </div>
+
+    <hr class="tech-divider">
+
+    <h2> --- PART 2: COMPILED & SYSTEM LANGUAGES --- </h2>
+    <p> These languages require a structural blueprint and a main wrapper function (<code>main()</code>) to act as an ignition switch. They must be compiled into machine executable files (.exe) before running. We include input pauses at the bottom so your terminal window stays open to display the transmission! </p>
+
+    <hr class="tech-divider">
+
+    <h2> C </h2>
+    <p> The grandfather of modern computing. C is a low-level systems language used to write operating system kernels and hardware drivers. It requires the Standard Input/Output library (<code>stdio.h</code>). </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
 
 int main() 
 {
     printf("Hi everyone\n");
+    
+    // Hold the terminal window open
+    printf("Press Enter to exit...");
+    getchar();
     return 0;
 }
 </code></pre>
@@ -87,15 +146,60 @@ int main()
     <hr class="largeDivider">
 
     <h2> C++ </h2>
-    <p> The heavy-duty evolution of C. When you need absolute control over the ship's memory combined with complex object structures for robotics or graphical user interfaces, C++ is the industry standard. It utilizes the Input/Output Stream library (<code>iostream</code>). </p>
+    <p> The heavy-duty evolution of C. When you need absolute control over the ship's memory combined with complex object structures for robotics or graphical user interfaces (like Qt), C++ is the industry standard. </p>
     <div class="example-module">
-<pre><code class="custom-code" data-language="cpp">// Compile and run via terminal
-#include &lt;iostream&gt;
+<pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
 
 int main() 
 {
     std::cout &lt;&lt; "Hi everyone" &lt;&lt; std::endl;
+    
+    // Hold the terminal window open
+    std::cout &lt;&lt; "Press Enter to exit...";
+    std::cin.get();
     return 0;
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> C# </h2>
+    <p> A modern, object-oriented language developed by Microsoft. C# is the powerhouse behind enterprise software and the Unity 3D game engine. Everything in C# must be encapsulated inside a Class. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="csharp">using System;
+
+class Program 
+{
+    static void Main() 
+    {
+        Console.WriteLine("Hi everyone");
+        
+        // Hold the terminal window open
+        Console.WriteLine("Press Enter to exit...");
+        Console.ReadLine();
+    }
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> Java </h2>
+    <p> The backbone of global enterprise, Android mobile devices, and military server infrastructure. Java is famous for its "Write Once, Run Anywhere" philosophy via the Java Virtual Machine (JVM). </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="java">import java.io.IOException;
+
+public class Mission 
+{
+    public static void Main(String[] args) throws IOException 
+    {
+        System.out.println("Hi everyone");
+        
+        // Hold the terminal window open
+        System.out.println("Press Enter to exit...");
+        System.in.read();
+    }
 }
 </code></pre>
     </div>
@@ -105,18 +209,50 @@ int main()
     <h2> Rust </h2>
     <p> A modern, ultra-secure systems language designed to prevent memory leaks and structural crashes. It uses an exclamation mark <code>!</code> to denote that it is calling a system macro rather than a standard function. </p>
     <div class="example-module">
-<pre><code class="custom-code" data-language="rust">// Compile and run via terminal
+<pre><code class="custom-code" data-language="rust">use std::io;
+
 fn main() 
 {
     println!("Hi everyone");
+    
+    // Hold the terminal window open
+    println!("Press Enter to exit...");
+    let mut buffer = String::new();
+    io::stdin().read_line(&mut buffer).unwrap();
 }
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> Assembly Language (x86 NASM) </h2>
+    <p> The raw language of the bare metal processor. Here, there are no variables, no formatting streams, and no safety nets. You are moving raw hexadecimal bytes directly into the CPU's memory registers to trigger a Linux system call. If nobody speaks Assembly, civilization halts! </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="assembly">section .data
+    msg db 'Hi everyone', 0xA  ; Our string with a line feed
+    len equ $ - msg            ; Calculate length of string
+
+section .text
+    global _start
+
+_start:
+    ; --- Transmit to screen ---
+    mov edx, len    ; Message length
+    mov ecx, msg    ; Message address to write
+    mov ebx, 1      ; File descriptor (stdout)
+    mov eax, 4      ; System call number (sys_write)
+    int 0x80        ; Call kernel
+
+    ; --- Terminate process safely ---
+    mov eax, 1      ; System call number (sys_exit)
+    int 0x80        ; Call kernel
 </code></pre>
     </div>
 
     <div class="technical-specs">
         <hr class="tech-divider">
         <h2> Engineering Summary </h2>
-        <p> Notice the structural differences. Scripting languages (JavaScript, Python) can execute commands immediately on the first line. System languages (C, C++, Rust) require a main wrapper function (<code>int main()</code> or <code>fn main()</code>) to act as the primary ignition switch for the compiled software. </p>
+        <p> Notice the huge spectrum of abstraction. In Python or Ruby, you speak almost plain English in a single line. In C++ or Java, you wrap your transmission in formal structures and types. In Assembly, you bypass the English language entirely and speak directly to the silicon transistors of the computer! </p>
         <hr class="tech-divider">
     </div>
 
@@ -125,5 +261,4 @@ fn main()
 </body>
 
 </html>
-
 
