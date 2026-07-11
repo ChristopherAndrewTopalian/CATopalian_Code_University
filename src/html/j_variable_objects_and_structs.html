@@ -1,0 +1,210 @@
+<!-- Dedicated to God the Father -->
+<!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
+<!-- https://github.com/ChristopherTopalian -->
+<!-- https://github.com/ChristopherAndrewTopalian -->
+<!-- j_variable_objects_and_structs.html -->
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title> Universal Language Repository: Objects and Structs </title>
+
+<meta charset='UTF-8'>
+
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+<link rel='stylesheet' href='../css/style001.css'>
+
+<script src='../js/colorer/catopalian_javascript_universal_code_colorer.js'></script>
+
+</head>
+
+<body onload='applyCustomHighlighting();'>
+
+<div>
+    <h1> Universal Language Repository: Objects and Structs </h1>
+
+    <hr class="tech-divider">
+
+    <p> In our previous lessons, we stored individual pieces of data and lists of identical data. But what if we want to represent a complete <b>Entity</b>? What if we need to store a starship's name (String) AND its shield percentage (Integer) together in a single unit? </p>
+
+    <p> In scripting languages, this is called an <b>Object</b>, <b>Dictionary</b>, or <b>Table</b>. In compiled system languages, this is called a <b>Struct</b> (a Structure) or a <b>Class</b>. </p>
+
+    <p> <b>Crucial Operational Note for Compiled Languages:</b> When you compile C, C++, C#, or Rust into an executable (.exe) file and double-click it, the terminal will flash and close instantly once the code finishes. To prevent this, we add an input command at the very bottom of those scripts to hold the console window open until you press Enter! </p>
+
+    <hr class="tech-divider">
+
+    <h2> JavaScript (HTML / Browser) </h2>
+    <p> JavaScript uses curly brackets <code>{}</code> to create an Object. We assign properties using key-value pairs and access them using dot notation. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;script&gt;
+        let ship = { name: "Enterprise", shields: 100 };
+        console.log(ship.name + " shields at " + ship.shields + "%");
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> JavaScript (Node.js) </h2>
+    <p> The Node.js desktop engine utilizes the exact same syntax. When run via an open terminal, the console naturally stays open to display your readout. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="js">let ship = { name: "Enterprise", shields: 100 };
+console.log(ship.name + " shields at " + ship.shields + "%");
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> Python </h2>
+    <p> Python calls these <b>Dictionaries</b>. They also use curly brackets, but require strings for the keys when accessing the data via square brackets. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="python">ship = {"name": "Enterprise", "shields": 100}
+print(ship["name"] + " shields at " + str(ship["shields"]) + "%")
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> Lua </h2>
+    <p> Lua uses its universal building block: the <b>Table</b>. By assigning named keys inside the curly brackets, the table acts just like a JavaScript object, allowing clean dot notation! </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="lua">ship = {name = "Enterprise", shields = 100}
+print(ship.name .. " shields at " .. ship.shields .. "%")
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> C </h2>
+    <p> In legacy C, we must define a blueprint called a <code>struct</code> first, explicitly declaring the memory for the character array and the integer. Notice we add <code>getchar()</code> at the end to keep your terminal window open! </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="c">#include &lt;stdio.h&gt;
+
+// Step 1: Define the Blueprint
+struct Starship {
+    char name[50];
+    int shields;
+};
+
+int main() 
+{
+    // Step 2: Create the entity
+    struct Starship ship = {"Enterprise", 100};
+    
+    printf("%s shields at %d%%\n", ship.name, ship.shields);
+    
+    // Hold the terminal window open!
+    printf("Press Enter to exit...");
+    getchar();
+    return 0;
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> C++ </h2>
+    <p> C++ makes structures clean and simple. We define our blueprint using standard <code>std::string</code> objects—avoiding pointers and references entirely! We use <code>std::cin.get()</code> at the end to hold the comm-link open. </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="cpp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+// Define a clean, pointer-free blueprint
+struct Starship {
+    std::string name;
+    int shields;
+};
+
+int main() 
+{
+    Starship ship = {"Enterprise", 100};
+    
+    std::cout &lt;&lt; ship.name &lt;&lt; " shields at " &lt;&lt; ship.shields &lt;&lt; "%" &lt;&lt; std::endl;
+    
+    // Hold the terminal window open!
+    std::cout &lt;&lt; "Press Enter to exit...";
+    std::cin.get();
+    return 0;
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> C# </h2>
+    <p> In C#, everything lives inside a <b>Class</b>. We build a simple blueprint with public fields so we can easily assign our starship data. We use <code>Console.ReadLine()</code> at the end to prevent the window from vanishing! </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="csharp">using System;
+
+class Starship 
+{
+    public string name;
+    public int shields;
+}
+
+class Program 
+{
+    static void Main() 
+    {
+        Starship ship = new Starship { name = "Enterprise", shields = 100 };
+        
+        Console.WriteLine(ship.name + " shields at " + ship.shields + "%");
+        
+        // Hold the terminal window open!
+        Console.WriteLine("Press Enter to exit...");
+        Console.ReadLine();
+    }
+}
+</code></pre>
+    </div>
+
+    <hr class="largeDivider">
+
+    <h2> Rust </h2>
+    <p> Rust utilizes the <code>struct</code> keyword. Notice that to store text inside a struct safely, Rust explicitly uses <code>String::from()</code>. We add an input read command at the bottom to hold your compiled window open! </p>
+    <div class="example-module">
+<pre><code class="custom-code" data-language="rust">use std::io;
+
+struct Starship {
+    name: String,
+    shields: i32,
+}
+
+fn main() 
+{
+    let ship = Starship {
+        name: String::from("Enterprise"),
+        shields: 100,
+    };
+    
+    println!("{} shields at {}%", ship.name, ship.shields);
+    
+    // Hold the terminal window open!
+    println!("Press Enter to exit...");
+    let mut buffer = String::new();
+    io::stdin().read_line(&mut buffer).unwrap();
+}
+</code></pre>
+    </div>
+
+    <div class="technical-specs">
+        <hr class="tech-divider">
+        <h2> Engineering Summary </h2>
+        <p> Scripting languages allow you to build objects on the fly by simply typing curly brackets <code>{}</code>. Compiled system languages (C, C++, C#, Rust) require you to design a structural blueprint (a <code>struct</code> or <code>class</code>) before you can instantiate your object in memory. This upfront blueprinting is what allows compiled languages to achieve blazing fast execution speeds! </p>
+        <hr class="tech-divider">
+    </div>
+
+</div>
+
+</body>
+
+</html>
+

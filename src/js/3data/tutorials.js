@@ -66,6 +66,24 @@ let tutorials = [
         urlOffline: 'src/html/i_variable_array_and_list.html'
     },
 
+    {
+        name: 'Objects and Structs Variable',
+        category: 'beginner',
+        urlOffline: 'src/html/j_variable_objects_and_structs.html'
+    },
+
+    {
+        name: '----',
+        category: 'spacer',
+        urlOffline: 'src/html/a_data_types_string.html'
+    }, 
+
+    {
+        name: 'Logic if',
+        category: 'beginner',
+        urlOffline: 'src/html/k_logic_if.html'
+    },
+
 ];
 
 //----//
