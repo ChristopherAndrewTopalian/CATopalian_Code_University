@@ -1,1 +1,1 @@
-All Right Reserved Copyright (c) 2000-2026-present Christopher Andrew Topalian
+(c) Copyright 2000-2026 Christopher Andrew Topalian All Rights Reserved
